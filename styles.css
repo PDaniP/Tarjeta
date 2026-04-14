@@ -109,25 +109,29 @@
 
     footer {
       display: flex;
-      justify-content: space-between;
+      gap: 1rem;
     }
 
-    button {
+    footer > a {
+      flex: 1;
+    }
+
+    footer button {
+      width: 100%;
       background-color: #007bff;
       color: white;
       border: none;
       padding: 1rem;
       border-radius: 0.8rem;
       cursor: pointer;
-      flex-grow: 1;
-      margin: 0 0.5rem;
+      margin: 0;
       font-weight: bold;
       transition: 0.3s;
     }
 
     .button1:hover {
-      background-color: #0056b3;
+      background-color: #2805ee;
     }
     .button2:hover {
-      background-color: #324555;
+      background-color: #fc0303;
     }
