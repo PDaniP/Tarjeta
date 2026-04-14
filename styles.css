@@ -13,15 +13,18 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background-color: rgba(232, 229, 236, 0.808);
+      /*background-color: rgba(232, 229, 236, 0.808);*/
+      background-color: rgba(2, 54, 58, 0.938);
       font-family: sans-serif;
     }
 
     .card {
-      background-color: rgb(255, 255, 255);
+      /*background-color: rgb(255, 255, 255);*/
+      background-color: rgba(33, 49, 49, 0.479);
       padding: 2rem;
       border-radius: 1.5rem;
-      box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.5);
+      /*box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.5);*/
+      box-shadow: 0 0.4rem 0.8rem rgba(253, 253, 253, 0.5);
       text-align: center;
       width: 35rem;
     }
@@ -35,7 +38,8 @@
     }
 
     .foto-perfil {
-      background: #e1e1e1;
+      /*background: #e1e1e1;*/
+      background: #050000;
       border-radius: 50%;
       width: 10rem;
       height: 10rem;
@@ -58,7 +62,8 @@
       font-size: 2.5rem;
       font-weight: bold;
       margin-bottom: 0;
-      color: #0f0707;
+      /*color: #0f0707;*/
+      color: #d4c9c9;
     }
 
     .titulo {
@@ -74,7 +79,8 @@
     }
 
     section div {
-      background-color: #f1f3f5;
+      /*background-color: #f1f3f5;*/
+      background-color: #435353;
       border-radius: 1.2rem;
       padding: 1rem;
       flex: 1;
@@ -82,15 +88,18 @@
       display: flex;
       flex-direction: column;
       gap: 0.8rem;
-      border: 0.1rem solid #e9ecef;
-      box-shadow: inset 0 0.2rem 0.4rem rgba(0, 0, 0, 0.02);
+      /*border: 0.1rem solid #e9ecef;
+      box-shadow: inset 0 0.2rem 0.4rem rgba(0, 0, 0, 0.02);*/
+      border: 0.1rem solid #274e4e;
     }
 
     section div p {
-      background-color: #ffffff;
+      /*background-color: #ffffff;*/
+      background-color: #304949;
       padding: 0.8rem;
       border-radius: 0.8rem;
-      box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+      /*box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);*/
+      box-shadow: 0 0.2rem 0.5rem rgba(255, 254, 254, 0.637);
       font-size: 1.4rem;
       text-align: center;
       transition: all 0.2s ease;
@@ -103,7 +112,8 @@
 
     section div p:last-child {
       font-style: italic;
-      color: #666;
+      /*color: #666;*/
+      color: #c0bcbc;
       font-size: 1.2rem;
     }
 
