@@ -1,0 +1,133 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 62.5%;
+    }
+
+    .flex-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: rgba(13, 2, 23, 0.175);
+      font-family: sans-serif;
+    }
+
+    .card {
+      background-color: rgb(255, 255, 255);
+      padding: 2rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.5);
+      text-align: center;
+      width: 35rem;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+      text-align: left;
+    }
+
+    .foto-perfil {
+      background: #e1e1e1;
+      border-radius: 50%;
+      width: 10rem;
+      height: 10rem;
+      display: flex;
+      margin: 0 auto 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .nombre {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 0;
+      color: #0f0707;
+    }
+
+    .titulo {
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+
+    section {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+    }
+
+    section div {
+      background-color: #f1f3f5;
+      border-radius: 1.2rem;
+      padding: 1rem;
+      flex: 1;
+      margin: 0 0.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      border: 0.1rem solid #e9ecef;
+      box-shadow: inset 0 0.2rem 0.4rem rgba(0, 0, 0, 0.02);
+    }
+
+    section div p {
+      background-color: #ffffff;
+      padding: 0.8rem;
+      border-radius: 0.8rem;
+      box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+      font-size: 1.4rem;
+      text-align: center;
+      transition: all 0.2s ease;
+    }
+
+    section div p:first-child {
+      font-weight: bold;
+      color: #007bff;
+    }
+
+    section div p:last-child {
+      font-style: italic;
+      color: #666;
+      font-size: 1.2rem;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 1rem;
+      border-radius: 0.8rem;
+      cursor: pointer;
+      flex-grow: 1;
+      margin: 0 0.5rem;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .button1:hover {
+      background-color: #0056b3;
+    }
+    .button2:hover {
+      background-color: #324555;
+    }
