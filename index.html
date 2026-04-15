@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tarjeta</title>
   <link rel="stylesheet" href="styles.css" />
+
+  
 </head>
 
 <body class="flex-container">
@@ -15,7 +17,7 @@
         <img src="assets/imagen.jpg" alt="Foto perfil" style="width: 100px; height: 100px; border-radius: 50%" />
       </div>
       <div>
-        <button class="mode">Modo</button>
+        <button type="button" class="mode">Modo Oscuro</button>
       </div>
       <div class="info">
         <p class="nombre">Pablo Picasso</p>
@@ -43,21 +45,7 @@
       <a href="https://www.youtube.com" target="_blank"><button class="button2">Youtube</button></a>
     </footer>
   </main>
-  
-  <script>
-    // Creamos un objeto de fecha con el momento actual
-    const fechaActual = new Date();
-
-    // Obtenemos los valores individuales
-    const dia = fechaActual.getDate();
-    const mes = fechaActual.getMonth() + 1; // Los meses van de 0 a 11, por eso sumamos 1
-    const anio = fechaActual.getFullYear();
-
-    // Inyectamos los valores en los párrafos usando su ID
-    document.getElementById('current-day').textContent = dia;
-    document.getElementById('current-month').textContent = mes;
-    document.getElementById('current-year').textContent = anio;
-  </script>
+  <script src="app.js"></script>
 </body>
 
 </html>
