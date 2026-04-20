@@ -154,3 +154,26 @@ footer button {
 .button2:hover {
   background-color: #fc0303;
 }
+
+.dark-mode {
+  background-color: #121212;
+}
+
+.dark-mode .card {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.dark-mode section div {
+  background-color: #2a2a2a;
+  border-color: #444;
+}
+
+.dark-mode section div p {
+  background-color: #333;
+  color: white;
+}
+
+.dark-mode .titulo {
+  color: #aaa;
+}
