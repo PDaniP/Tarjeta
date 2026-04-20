@@ -11,13 +11,28 @@ document.getElementById("current-day").textContent = dia;
 document.getElementById("current-month").textContent = mes;
 document.getElementById("current-year").textContent = anio;
 
+//Para boton modo oscuro y guardar el estado actual
+
+const modoGuardado = localStorage.getItem("modo");
 const boton = document.querySelector(".mode");
+
+if (modoGuardado === "oscuro") {
+  document.body.classList.add("dark-mode");
+  boton.textContent = "Modo Claro";
+} else {
+  boton.textContent = "Modo Oscuro";
+}
+
+//Boton modo oscuro
 
 boton.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
+
   if (document.body.classList.contains("dark-mode")) {
     boton.textContent = "Modo Claro";
+    localStorage.setItem("modo", "oscuro");
   } else {
     boton.textContent = "Modo Oscuro";
+    localStorage.setItem("modo", "claro");
   }
 });
