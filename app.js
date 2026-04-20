@@ -15,12 +15,20 @@ document.getElementById("current-year").textContent = anio;
 
 const modoGuardado = localStorage.getItem("modo");
 const boton = document.querySelector(".mode");
+const card = document.querySelector(".card");
 
 if (modoGuardado === "oscuro") {
   document.body.classList.add("dark-mode");
   boton.textContent = "Modo Claro";
 } else {
   boton.textContent = "Modo Oscuro";
+}
+
+// Cargar color guardado
+const colorGuardado = localStorage.getItem("colorTexto");
+
+if (colorGuardado) {
+  card.classList.add(`text-${colorGuardado}`);
 }
 
 //Boton modo oscuro
@@ -35,4 +43,24 @@ boton.addEventListener("click", () => {
     boton.textContent = "Modo Oscuro";
     localStorage.setItem("modo", "claro");
   }
+});
+
+//botones de colores
+
+const botonesColor = document.querySelectorAll(".color-btn");
+
+botonesColor.forEach((boton) => {
+  boton.addEventListener("click", () => {
+    const color = boton.dataset.color;
+
+    // limpiar colores anteriores
+    card.classList.remove("text-red", "text-blue", "text-yellow");
+
+    if (color === "reset") {
+      localStorage.removeItem("colorTexto");
+    } else {
+      card.classList.add(`text-${color}`);
+      localStorage.setItem("colorTexto", color);
+    }
+  });
 });

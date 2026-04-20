@@ -184,3 +184,49 @@ footer button {
 .dark-mode .titulo {
   color: #aaa;
 }
+
+.color-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.color-btn {
+  flex: 1;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.red {
+  background-color: #dc3545;
+}
+
+.blue {
+  background-color: #007bff;
+}
+
+.yellow {
+  background-color: #ffc107;
+  color: black;
+}
+
+.reset {
+  background-color: #6c757d;
+}
+
+.text-red *:not(button){
+  color: #dc3545 !important;
+}
+
+.text-blue *:not(button){
+  color: #007bff !important;
+}
+
+.text-yellow *:not(button){
+  color: #ffc107 !important;
+}
