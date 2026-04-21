@@ -30,9 +30,9 @@ const card = document.querySelector(".card");
 
 if (modoGuardado === "oscuro") {
   document.body.classList.add("dark-mode");
-  boton.textContent = "Modo Claro";
+  boton.textContent = "🔆";
 } else {
-  boton.textContent = "Modo Oscuro";
+  boton.textContent = "🌙";
 }
 
 // Cargar color guardado
@@ -48,10 +48,10 @@ boton.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 
   if (document.body.classList.contains("dark-mode")) {
-    boton.textContent = "Modo Claro";
+    boton.textContent = "🔆";
     localStorage.setItem("modo", "oscuro");
   } else {
-    boton.textContent = "Modo Oscuro";
+    boton.textContent = "🌙";
     localStorage.setItem("modo", "claro");
   }
 });
@@ -79,7 +79,7 @@ botonesColor.forEach((boton) => {
 // JavaScript: Función para cambiar la visibilidad
 function mostrarFormulario() {
   const formulario = document.getElementById("formulario");
-  
+
   if (formulario.style.display === "none") {
     formulario.style.display = "block"; // Muestra el formulario
   } else {
