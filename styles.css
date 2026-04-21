@@ -45,7 +45,7 @@ html {
   background-color: #0056b3;
 }
 
-.datos{
+.datos {
   position: absolute;
   top: 11.5rem;
   right: 6rem;
@@ -152,7 +152,7 @@ footer {
   gap: 1rem;
 }
 
-footer > a {
+footer>a {
   flex: 1;
 }
 
@@ -172,6 +172,7 @@ footer button {
 .button1:hover {
   background-color: #2805ee;
 }
+
 .button2:hover {
   background-color: #fc0303;
 }
@@ -237,14 +238,39 @@ footer button {
   background-color: #6c757d;
 }
 
-.text-red *:not(button){
+.text-red *:not(button) {
   color: #dc3545 !important;
 }
 
-.text-blue *:not(button){
+.text-blue *:not(button) {
   color: #007bff !important;
 }
 
-.text-yellow *:not(button){
+.text-yellow *:not(button) {
   color: #ffc107 !important;
+}
+
+#formulario {
+  display: none;
+  margin-top: 20px;
+  padding: 15px;
+  width: 300px;
+}
+
+.actualizar{
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  transition: 0.3s;
+}
+
+input{
+  margin: 0.2rem;
+  border-radius: 0.5rem;
+  border: none;
 }

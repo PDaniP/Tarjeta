@@ -64,3 +64,13 @@ botonesColor.forEach((boton) => {
     }
   });
 });
+
+// JavaScript: Función para cambiar la visibilidad
+function mostrarFormulario() {
+  var formulario = document.getElementById("formulario");
+  if (formulario.style.display === "none") {
+    formulario.style.display = "block"; // Muestra el formulario
+  } else {
+    formulario.style.display = "none"; // Lo vuelve a ocultar si se presiona de nuevo
+  }
+}

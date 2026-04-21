@@ -22,7 +22,15 @@
         </div>
       </header>
 
-      <button class="datos">Modificar datos</button>
+      <button class="datos" onclick="mostrarFormulario()">Modificar datos</button>
+
+      <div id="formulario">
+        <form action="">
+          <input type="text" placeholder="Nombre y apellido">
+          <input type="text" placeholder="Titulo">
+        </form>
+        <button class="actualizar" type="submit">Actualizar datos</button>
+      </div>
 
       <section>
         <div>
