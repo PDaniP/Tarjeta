@@ -171,6 +171,10 @@ footer button {
   color: white;
 }
 
+.dark-mode .nombre {
+  color: #fff;
+}
+
 .dark-mode section div {
   background-color: #2a2a2a;
   border-color: #444;
