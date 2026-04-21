@@ -74,3 +74,8 @@ function mostrarFormulario() {
     formulario.style.display = "none"; // Lo vuelve a ocultar si se presiona de nuevo
   }
 }
+
+function modificarDatos(){
+  var nombre = document.getElementsByClassName('nombre');
+  var titulo = document.getElementsByClassName('titulo');
+}
