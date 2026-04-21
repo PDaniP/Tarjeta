@@ -45,6 +45,20 @@ html {
   background-color: #0056b3;
 }
 
+.datos{
+  position: absolute;
+  top: 11.5rem;
+  right: 6rem;
+  padding: 0.2rem 1rem;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  transition: 0.3s;
+}
+
 .header {
   display: flex;
   align-items: center;
