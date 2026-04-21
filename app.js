@@ -1,3 +1,14 @@
+const nombreGuardado = localStorage.getItem("nombre");
+const tituloGuardado = localStorage.getItem("titulo");
+
+if (nombreGuardado) {
+  document.querySelector(".nombre").textContent = nombreGuardado;
+}
+
+if (tituloGuardado) {
+  document.querySelector(".titulo").textContent = tituloGuardado;
+}
+
 // Creamos un objeto de fecha con el momento actual
 const fechaActual = new Date();
 
@@ -67,7 +78,8 @@ botonesColor.forEach((boton) => {
 
 // JavaScript: Función para cambiar la visibilidad
 function mostrarFormulario() {
-  var formulario = document.getElementById("formulario");
+  const formulario = document.getElementById("formulario");
+  
   if (formulario.style.display === "none") {
     formulario.style.display = "block"; // Muestra el formulario
   } else {
@@ -75,7 +87,25 @@ function mostrarFormulario() {
   }
 }
 
-function modificarDatos(){
-  var nombre = document.getElementsByClassName('nombre');
-  var titulo = document.getElementsByClassName('titulo');
+function modificarDatos() {
+  var nombreInput = document.getElementById("input-nombre").value;
+  var tituloInput = document.getElementById("input-titulo").value;
+
+  const nombre = document.querySelector(".nombre");
+  const titulo = document.querySelector(".titulo");
+
+  //actaualiza si hay contenido
+
+  if (nombreInput.trim() !== "") {
+    nombre.textContent = nombreInput;
+    localStorage.setItem("nombre", nombreInput);
+  }
+
+  if (tituloInput.trim() !== "") {
+    titulo.textContent = tituloInput;
+    localStorage.setItem("titulo", tituloInput);
+  }
+
+  //ocultar el formulario
+  document.getElementById("formulario").style.display = "none";
 }
